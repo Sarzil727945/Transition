@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div{
+    display: flex;
+    border: 2px dotted red;
+    width: 90%;
+    height: 500px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    padding: 50px;
+}
+.messi{
+    width: 300px;
+}
+.div:hover .messi{
+    transform: rotate(-10deg);
+    transition: transform .5s ease-in;
+    transform-origin: top right;
+}
+ .ball{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50px;
+    position: relative;
+    top: 355px;
+    right: 55px;
+    z-index: 2;
+}
+.div:hover .ball{
+    transform: translate(800px,-200px);
+    transition: transform 2s ease-out .6s;
+}
+.bar{
+    padding: 25px;
+    transform: scale(2) rotate(5deg);
+    position: relative;
+    left: 360px;
+    top: 280px;
+    z-index: 1;
+}
